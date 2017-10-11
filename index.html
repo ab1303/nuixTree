@@ -1,0 +1,20 @@
+<html  ng-app="nuixApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="nuix.module.js"></script>
+    <script src="recursionHelper.js"></script>
+    <script src="nuix.directive.js"></script>
+    <script src="nuix.controller.js"></script>
+</head>
+
+<body>
+    <div ng-controller="nuixCtrl as vm">
+        <nuix-tree tree-map="vm.tree" node-type="root"></nuix-tree>
+    </div>
+</body>
+
+</html>

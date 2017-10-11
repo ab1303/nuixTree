@@ -1,0 +1,49 @@
+/*
+ Task:
+ Using Javascript please render HTML element that displays the input JSON data below.
+ It should reflect parent-child relationship by appropriate element nesting and indentation.
+ The structure should be right-justified, meaning the indentation should start from the right and move to the left.
+ Additionally, when a node is clicked, it should print (to console) all labels on a path from clicked node to the root (Earth).
+
+ TODO: CSS/styling
+ 
+ You can use any opensource utilities and libraries available in the fiddle.
+ */
+
+var input = {
+    label: 'Earth',
+    type: 'planet',
+    children: [{
+        label: 'Australia',
+        type: 'country',
+        children: [{
+            label: 'Sydney',
+            type: 'city',
+            children: [{
+                label: 'Nuix HQ',
+                type: 'office',
+                children: []
+            }]
+        }]
+    }, {
+        label: 'USA',
+        type: 'country',
+        children: [{
+            label: 'San Franscisco',
+            type: 'city',
+            children: [{
+                label: 'Nuix SF',
+                type: 'office',
+                children: []
+            }]
+        }, {
+            label: 'Philadelphia',
+            type: 'city',
+            children: [{
+                label: 'Nuix Philly',
+                type: 'office',
+                children: []
+            }]
+        }]
+    }]
+};

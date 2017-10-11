@@ -1,0 +1,11 @@
+ <div>
+    <h3 ng-if="vm.isBranchNode"><strong>{{vm.treeMap.type}} - {{vm.treeMap.label}}</strong></h3>
+    <div ng-if="!vm.isLeafNode">
+        <ul class="dl-horizontal" ng-repeat="branch in vm.treeMap.children">
+            <nuix-tree tree-map="branch"></nuix-tree>
+        </ul>
+    </div>
+    <li ng-if="vm.isLeafNode">
+        <strong>{{vm.treeMap.type}} - {{vm.treeMap.label}}</strong>
+    </li>
+</div> 
